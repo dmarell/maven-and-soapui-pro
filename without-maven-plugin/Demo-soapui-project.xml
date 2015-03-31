@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="3940c0b1-bfef-43f2-b945-af0d30ee0f30" activeEnvironment="Default" name="Demo" resourceRoot=""
+                    soapui-version="5.1.2" xmlns:con="http://eviware.com/soapui/config">
+    <con:settings/>
+    <con:testSuite id="2296b422-85dd-47e3-aa97-4a7180d3f5d9" name="TestSuite 1">
+        <con:settings/>
+        <con:runType>SEQUENTIAL</con:runType>
+        <con:testCase id="ab194b5e-3658-4426-854a-eae2871b9345" failOnError="true" failTestCaseOnErrors="true"
+                      keepSession="false" maxResults="0" name="TestCase 1" searchProperties="true">
+            <con:settings/>
+            <con:properties/>
+            <con:reportParameters/>
+        </con:testCase>
+        <con:properties/>
+        <con:reportParameters/>
+    </con:testSuite>
+    <con:requirements/>
+    <con:properties/>
+    <con:wssContainer/>
+    <con:databaseConnectionContainer/>
+    <con:oAuth2ProfileContainer/>
+    <con:reporting>
+        <con:reportTemplates/>
+        <con:xmlTemplates/>
+        <con:parameters/>
+    </con:reporting>
+    <con:sensitiveInformation/>
+</con:soapui-project>
