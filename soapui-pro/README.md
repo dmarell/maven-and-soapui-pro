@@ -7,5 +7,11 @@ the other versions jar files. There are a large amount of jar files, therefore t
 directory was created, it generates needed entries for pom.xml from whatever version you have installed of SoapUI Pro.
 This tool was tested for SoapUI Pro 5.1.2 only.
 
+## Update for new SoapUI Pro version
+
+- Install new SoapUI Pro version locally
+- Run the class CreatePomSnippetsFromFileListing
+- Paste the snippets into the pom of this module, replacing the corresponsing sections already there
+
 Happy coding,
 Daniel Marell

@@ -18,12 +18,18 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+            <!--
+            Add this in order to be able to run this app with maven-tomcat-plugin.
+            At the same time it disables the possibility to run the app standalone via the main method.
+            -->
+            <exclusions>
+                <exclusion>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-starter-tomcat</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
     </dependencies>
-
-    <properties>
-        <java.version>1.7</java.version>
-    </properties>
 
     <build>
         <plugins>
@@ -33,17 +39,4 @@
             </plugin>
         </plugins>
     </build>
-
-    <!--<repositories>-->
-        <!--<repository>-->
-            <!--<id>spring-releases</id>-->
-            <!--<url>https://repo.spring.io/libs-release</url>-->
-        <!--</repository>-->
-    <!--</repositories>-->
-    <!--<pluginRepositories>-->
-        <!--<pluginRepository>-->
-            <!--<id>spring-releases</id>-->
-            <!--<url>https://repo.spring.io/libs-release</url>-->
-        <!--</pluginRepository>-->
-    <!--</pluginRepositories>-->
 </project>

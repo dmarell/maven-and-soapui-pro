@@ -1,7 +1,3 @@
-/*
- * Developed by Folksam.
- * Copyright (c) Folksam. All rights reserved.
- */
 package test;
 
 import java.io.File;
@@ -44,7 +40,6 @@ public class CreatePomSnippetsFromFileListing {
         File binDir = new File(soapuiDir + File.separator + "bin");
 
         FilenameFilter jarFileNameFilter = new FilenameFilter() {
-            @Override
             public boolean accept(File dir, String name) {
                 return name.endsWith(".jar");
             }
@@ -90,7 +85,7 @@ public class CreatePomSnippetsFromFileListing {
                             "        <goal>install-file</goal>\n" +
                             "    </goals>\n" +
                             "    <configuration>\n" +
-                            "        <groupId>se.folksam.soapui-pro</groupId>\n" +
+                            "        <groupId>se.caglabs.soapui-pro</groupId>\n" +
                             "        <artifactId>lib%d</artifactId>\n" +
                             "        <version>1</version>\n" +
                             "        <packaging>jar</packaging>\n" +
@@ -107,7 +102,7 @@ public class CreatePomSnippetsFromFileListing {
         for (JarfileEntry f : files) {
             System.out.printf(
                     "<dependency>\n" +
-                            "    <groupId>se.folksam.soapui-pro</groupId>\n" +
+                            "    <groupId>se.caglabs.soapui-pro</groupId>\n" +
                             "    <artifactId>lib%d</artifactId>\n" +
                             "    <version>1</version>\n" +
                             "    <scope>system</scope>\n" +

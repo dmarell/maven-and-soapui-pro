@@ -1,7 +1,3 @@
-/*
- * Developed by Folksam.
- * Copyright (c) Folksam. All rights reserved.
- */
 package test;
 
 import org.junit.Test;
